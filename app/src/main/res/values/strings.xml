@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Repo Tracker</string>
+    <string name="add_now">ADD NOW</string>
+    <string name="track_your_favorite_repo">Track your favorite repo</string>
+    <string name="add_new_repo">ADD NEW REPO</string>
+    <string name="owner_organization">Owner / Organization</string>
+    <string name="repository_name">Repository Name</string>
+    <string name="add">ADD</string>
+</resources>

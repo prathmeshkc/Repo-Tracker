@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pcandroiddev.repotracker.ui.HomeFragment"
+        android:label="Github Browser" >
+        <action
+            android:id="@+id/action_homeFragment_to_addRepoFragment"
+            app:destination="@id/addRepoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRepoFragment"
+        android:name="com.pcandroiddev.repotracker.ui.AddRepoFragment"
+        android:label="Add Repo" >
+        <action
+            android:id="@+id/action_addRepoFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
